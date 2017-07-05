@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>myapp</title> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./dist/build.js"></script>
+  </body>
+  <script>
+  	window.onload=function(){ 
+		var vW = 320;
+		var vfontSize = 16;
+		var html = document.documentElement;
+		var newFontSize = html.clientWidth*vfontSize/vW;
+		html.style.fontSize = newFontSize+'px'; 
+	}
+  </script>
+</html>
